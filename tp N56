@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+string ProcesarPalabra(string palabra);
+int main()
+{ string palabra;
+    cout<<"ingrese una palabra con la letra A"<<endl;
+    cin>>palabra;
+cout<<ProcesarPalabra(palabra)<<endl;
+    return 0;
+}
+string ProcesarPalabra(string palabra){
+   int i;
+   
+    for(i=0;i<palabra.size();i++){
+        if(palabra[i]=='a'){
+            palabra[i]='b';
+        }
+    }
+    
+        
+   return palabra; 
+    
+    
+}
